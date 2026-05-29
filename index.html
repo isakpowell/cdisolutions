@@ -1,0 +1,2740 @@
+<!DOCTYPE html>
+<html class="w-mod-js w-mod-ix" lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <style>
+   .wf-force-outline-none[tabindex="-1"]:focus{outline:none;}
+  </style>
+  <title>
+   CDI Solutions | Strategic Project &amp; Construction Management
+  </title>
+  <meta content="CDI Solutions delivers end-to-end project management, construction management and independent client representation across Australia." name="description"/>
+  <meta content="CDI Solutions | Strategic Project &amp; Construction Management" property="og:title"/>
+  <meta content="CDI Solutions delivers end-to-end project management, construction management and independent client representation across Australia." property="og:description"/>
+  <meta content="https://placehold.co/1200x630/001559/ffffff?text=CDI+Solutions" property="og:image"/>
+  <meta content="CDI Solutions | Strategic Project &amp; Construction Management" name="twitter:title"/>
+  <meta content="CDI Solutions delivers end-to-end project management, construction management and independent client representation across Australia." name="twitter:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Webflow" name="generator"/>
+  <link href="./assets/webflow.shared.css" rel="stylesheet" type="text/css"/>
+  <style>
+   @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28"] {-webkit-transform:translate3d(0rem, 0rem, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0rem, 0rem, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0rem, 0rem, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0rem, 0rem, null) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}}
+  </style>
+  <script type="text/javascript">
+   !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);
+  </script>
+  <link href="mailto:adam@cdisolutions.com.au" rel="canonical"/>
+  <style>
+   .blur-button {
+  position: relative;
+  border: 1px solid transparent;
+  background: transparent;
+  color: white;
+  backdrop-filter: blur(68px);
+  -webkit-backdrop-filter: blur(68px);
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Gradient border menggunakan pseudo-element */
+.blur-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+ 	background: linear-gradient(
+    -190deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.2) 15%,
+    rgba(255, 255, 255, 0.05) 55%,
+    rgba(255, 255, 255, 0.2) 80%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+  </style>
+  <!-- Splide.js CSS (latest version) -->
+  <link href="./assets/splide.min.css" rel="stylesheet"/>
+  <!-- [Attributes by Finsweet] CMS Tabs -->
+  <script async="" src="./assets/cmstabs.js.download">
+  </script>
+  <!-- [Attributes by Finsweet] CMS Slider -->
+  <script async="" src="./assets/cmsslider.js.download">
+  </script>
+  <style>
+   /* CDI Solutions Dark Theme */
+:root {
+  --swatch--ocean-blue:       #0d0d0d;
+  --swatch--core-blue:        #f97316;
+  --swatch--core-blue-faded:  #ea6a0a;
+  --swatch--light-blue:       #e8e8e8;
+  --swatch--border-dark:      #ffffff1a;
+  --swatch--border-light:     #ffffff30;
+  --swatch--light-faded:      #ffffff12;
+}
+.nav {
+  --_theme---background: #000000;
+  background-color: #000000 !important;
+  transition: background-color 0.4s ease;
+}
+.industries_wrap {
+  background-color: #000000 !important;
+}
+section {
+  padding-top: var(--_spacing---section-padding--main);
+  padding-bottom: var(--_spacing---section-padding--main);
+}
+.services_wrap {
+  padding-bottom: 4rem;
+}
+.stream_item {
+  height: 85vh;
+}
+.services-card {
+  height: 100%;
+}
+.services_link {
+  padding: 0.85rem 1rem;
+}
+.services_content.u-align-self-center.u-vflex-center-top {
+  grid-row-gap: 0.85rem !important;
+}
+.services-card.u-gap-7 {
+  gap: 2rem;
+}
+@media (max-width: 991px) {
+  .project-cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 575px) {
+  .project-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ===== SECTORS HORIZONTAL SCROLL ===== */
+.cdi-sectors-scroll {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249,115,22,0.4) rgba(255,255,255,0.05);
+}
+.cdi-sectors-scroll::-webkit-scrollbar { height: 3px; }
+.cdi-sectors-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+.cdi-sectors-scroll::-webkit-scrollbar-thumb { background: rgba(249,115,22,0.45); border-radius: 2px; }
+.cdi-sector-card {
+  flex-shrink: 0;
+  width: 270px;
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  scroll-snap-align: start;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: border-color 0.25s ease;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.cdi-sector-card:hover { border-color: rgba(249,115,22,0.4); }
+.cdi-sector-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  transition: transform 0.55s ease;
+}
+.cdi-sector-card:hover .cdi-sector-card-img { transform: scale(1.07); }
+.cdi-sector-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8,8,8,0.85) 0%, rgba(8,8,8,0.3) 50%, rgba(8,8,8,0.05) 100%);
+  z-index: 1;
+}
+.cdi-sector-card-content {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem 1.5rem;
+  gap: 1.3rem;
+  backdrop-filter: blur(68px);
+  -webkit-backdrop-filter: blur(68px);
+  background: #ffffff03;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.cdi-sector-card-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.6rem;
+  opacity: 0.85;
+  flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(57%) sepia(82%) saturate(500%) hue-rotate(345deg) brightness(103%);
+}
+.cdi-sector-card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.15;
+  letter-spacing: 0em;
+}
+.cdi-sector-card-tagline {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 0em;
+}
+.cdi-sector-card-cta {
+  display: none;
+}
+
+/* ===== OUR APPROACH ===== */
+.cdi-approach-section {
+  position: relative;
+  overflow: hidden;
+}
+.cdi-approach-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.cdi-approach-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(5,5,5,0.92) 0%, rgba(5,5,5,0.78) 100%);
+  z-index: 1;
+}
+.cdi-approach-inner {
+  position: relative;
+  z-index: 2;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.cdi-approach-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.cdi-approach-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+.cdi-approach-chip {
+  display: inline-flex;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #f97316;
+  border: 1px solid rgba(249,115,22,0.3);
+  border-radius: 100px;
+  padding: 0.3rem 0.9rem;
+  width: fit-content;
+}
+.cdi-approach-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.cdi-approach-intro {
+  color: rgba(255,255,255,0.55);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 38ch;
+  padding-bottom: 0.25rem;
+}
+.cdi-approach-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.cdi-approach-pillar {
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cdi-approach-pillar:first-child {
+  padding-left: 0;
+}
+.cdi-approach-pillar:last-child {
+  border-right: none;
+  padding-right: 0;
+  padding-left: 2.5rem;
+}
+.cdi-approach-pillar:nth-child(2) {
+  padding-left: 2.5rem;
+}
+.cdi-approach-num {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(249,115,22,0.2);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.cdi-approach-pillar-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+}
+.cdi-approach-pillar-desc {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.52);
+  line-height: 1.75;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .cdi-approach-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .cdi-approach-pillars {
+    grid-template-columns: 1fr;
+  }
+  .cdi-approach-pillar,
+  .cdi-approach-pillar:first-child,
+  .cdi-approach-pillar:nth-child(2),
+  .cdi-approach-pillar:last-child {
+    padding: 2rem 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .cdi-approach-pillar:last-child { border-bottom: none; }
+}
+
+/* ===== WHO WE ARE ===== */
+.cdi-who-section {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  min-height: 560px;
+  background: #000000;
+  padding: 3.5rem 0 3.5rem calc((100% - var(--container--main)) / 2);
+}
+.cdi-who-image-col { overflow: hidden; border-radius: 1.25rem; }
+.cdi-who-img-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  background: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.05em;
+  position: relative;
+}
+.cdi-who-content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 4rem 3.375rem;
+}
+.cdi-who-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+.cdi-who-body {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  letter-spacing: 0em;
+  margin: 0;
+  max-width: 46ch;
+}
+.cdi-who-qual {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  width: fit-content;
+}
+.cdi-hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.cdi-hero-badge-wrap {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  height: 3.4rem;
+  flex-shrink: 0;
+}
+.cdi-hero-badge {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+.cdi-who-qual-badge {
+  height: 64px;
+  width: auto;
+  display: block;
+  border-radius: 6px;
+}
+@media (max-width: 767px) {
+  .cdi-who-section { grid-template-columns: 1fr; padding: 3.5rem 0; }
+  .cdi-who-img-placeholder { min-height: 260px; }
+  .cdi-who-image-col { border-radius: 1.25rem; margin: 0 1.5rem; }
+  .cdi-who-content-col { padding: 2.5rem 1.5rem; text-align: center; align-items: center; }
+  .cdi-who-content-col .btn_main_wrap { align-self: center; }
+  .cdi-who-qual { position: absolute; bottom: 1rem; left: 1rem; }
+
+  .cdi-approach-header { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+  .cdi-approach-header-left { align-items: center; }
+  .cdi-approach-intro { text-align: center; max-width: 100%; }
+  .cdi-approach-pillars { grid-template-columns: 1fr; border-top: none; }
+  .cdi-approach-pillar { text-align: center; align-items: center; padding: 2rem 0; border-right: none; border-top: 1px solid rgba(255,255,255,0.1); }
+  .cdi-approach-pillar:first-child { padding-left: 0; }
+  .cdi-approach-pillar:last-child { padding-right: 0; padding-left: 0; }
+  .cdi-approach-pillar:nth-child(2) { padding-left: 0; }
+}
+
+/* ===== PROJECT CARDS ===== */
+.project-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.cdi-project-placeholder {
+  background-image: url(./assets/68fac81860379c5ec54a7814_IMG_2552.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cdi-project-sector {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.cdi-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+.cdi-project-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.6);
+}
+@media (max-width: 991px) {
+  .project-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .project-cards-grid { grid-template-columns: 1fr; }
+}
+
+  </style>
+ </head>
+ <body>
+  <div class="page_wrap">
+   <div class="global_css">
+    <div class="global_code_base w-embed">
+     <style>
+      :root {
+  --site--max-width: min(var(--site--width), 100vw);
+  --container--main: calc(var(--site--max-width) - var(--site--margin) * 2);
+  --container--full: calc(100vw - var(--site--margin) * 2);
+  --container--small: calc(var(--column-width--plus-gutter) * (var(--site--column-count) - 2) - var(--site--gutter));
+  --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+  --column-width--1: calc((var(--container--main) - var(--site--gutter-total)) / var(--site--column-count));
+  --column-width--plus-gutter: calc(var(--column-width--1) + var(--site--gutter));
+  --column-width--2: calc(var(--column-width--plus-gutter) * 2 - var(--site--gutter));
+  --column-width--3: calc(var(--column-width--plus-gutter) * 3 - var(--site--gutter));
+  --column-width--4: calc(var(--column-width--plus-gutter) * 4 - var(--site--gutter));
+  --column-width--5: calc(var(--column-width--plus-gutter) * 5 - var(--site--gutter));
+  --column-width--6: calc(var(--column-width--plus-gutter) * 6 - var(--site--gutter));
+  --column-width--7: calc(var(--column-width--plus-gutter) * 7 - var(--site--gutter));
+  --column-width--8: calc(var(--column-width--plus-gutter) * 8 - var(--site--gutter));
+  --column-width--9: calc(var(--column-width--plus-gutter) * 9 - var(--site--gutter));
+  --column-width--10: calc(var(--column-width--plus-gutter) * 10 - var(--site--gutter));
+  --column-width--11: calc(var(--column-width--plus-gutter) * 11 - var(--site--gutter));
+  --column-width--12: calc(var(--column-width--plus-gutter) * 12 - var(--site--gutter));
+  --column-margin--1: calc(var(--column-width--plus-gutter) * 1);
+  --column-margin--2: calc(var(--column-width--plus-gutter) * 2);
+  --column-margin--3: calc(var(--column-width--plus-gutter) * 3);
+  --column-margin--4: calc(var(--column-width--plus-gutter) * 4);
+  --column-margin--5: calc(var(--column-width--plus-gutter) * 5);
+  --column-margin--6: calc(var(--column-width--plus-gutter) * 6);
+  --column-margin--7: calc(var(--column-width--plus-gutter) * 7);
+  --column-margin--8: calc(var(--column-width--plus-gutter) * 8);
+  --column-margin--9: calc(var(--column-width--plus-gutter) * 9);
+  --column-margin--10: calc(var(--column-width--plus-gutter) * 10);
+  --column-margin--11: calc(var(--column-width--plus-gutter) * 11);
+  --column-margin--12: calc(var(--column-width--plus-gutter) * 12);
+  --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+  --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+  --grid-breakout-single: var(--breakout-start) minmax(0, var(--container--main)) var(--breakout-end);
+  --grid-breakout: var(--breakout-start) repeat(var(--site--column-count), minmax(0, var(--column-width--1))) var(--breakout-end);
+  --grid-main: repeat(var(--site--column-count), minmax(0, 1fr));
+  --grid-1: repeat(1, minmax(0, 1fr));
+  --grid-2: repeat(2, minmax(0, 1fr));
+  --grid-3: repeat(3, minmax(0, 1fr));
+  --grid-4: repeat(4, minmax(0, 1fr));
+  --grid-5: repeat(5, minmax(0, 1fr));
+  --grid-6: repeat(6, minmax(0, 1fr));
+  --grid-7: repeat(7, minmax(0, 1fr));
+  --grid-8: repeat(8, minmax(0, 1fr));
+  --grid-9: repeat(9, minmax(0, 1fr));
+  --grid-10: repeat(10, minmax(0, 1fr));
+  --grid-11: repeat(11, minmax(0, 1fr));
+  --grid-12: repeat(12, minmax(0, 1fr));
+  --grid-14: repeat(14, minmax(0, 1fr));
+  --grid-16: repeat(16, minmax(0, 1fr)); 
+	--_typography---text-transform--none: none;
+	--_typography---text-transform--uppercase: uppercase;
+	--_typography---text-transform--captialize: capitalize;
+	--_typography---text-transform--lowercase: lowercase;
+}
+* {
+	vertical-align: bottom;
+}
+::before, ::after {
+	box-sizing: border-box;
+}
+button {
+	background-color: unset;
+	padding: unset;
+	text-align: inherit;
+}
+button:not(:disabled) {
+	cursor: pointer;
+}
+video {
+	width: 100%;
+	object-fit: cover;
+}
+video.wf-empty {
+	padding: 0;
+}
+svg {
+	max-width: 100%;
+}
+section, header, footer {
+	position: relative;
+}
+@media (prefers-color-scheme: light) {
+	option {
+		color: black;
+	}
+}
+img::selection {
+	background: transparent;
+}
+/* Typography */
+body {
+	text-transform: var(--_text-style---text-transform);
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+a:not([class]) {
+	text-decoration: underline;
+}
+h1,h2,h3,h4,h5,h6,p,blockquote,label,figure {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-transform: inherit;
+	text-wrap: inherit;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+:is(.u-margin-trim, .u-rich-text) > :not(:not(.w-condition-invisible) ~ :not(.w-condition-invisible)) {
+	margin-top: 0;
+}
+:is(.u-margin-trim, .u-rich-text) > :not(:has(~ :not(.w-condition-invisible))) {
+	margin-bottom: 0;
+}
+.w-richtext a {
+	position: relative;
+	z-index: 4;
+}
+.u-child-contain > * {
+	display: inline-block;
+	width: 100%;
+	max-width: inherit;
+	margin-top: 0;
+}
+:is(h1,h2,h3,h4,h5,h6,p):not(.u-text-trim-off,:has([class*="u-text-style-"]))::before,
+[class*="u-text-style-"]:not(.u-text-trim-off,:has(h1,h2,h3,h4,h5,h6,p))::before {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-top));
+}
+:is(h1,h2,h3,h4,h5,h6,p):not(.u-text-trim-off,:has([class*="u-text-style-"]))::after,
+[class*="u-text-style-"]:not(.u-text-trim-off,:has(h1,h2,h3,h4,h5,h6,p))::after {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-bottom));
+}
+
+.u-line-clamp-1, .u-line-clamp-2, .u-line-clamp-3, .u-line-clamp-4 {
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.u-line-clamp-2 { -webkit-line-clamp: 2; }
+.u-line-clamp-3 { -webkit-line-clamp: 3; }
+.u-line-clamp-4 { -webkit-line-clamp: 4; }
+
+/* Hide */
+.u-hide-if-empty:empty,
+.u-hide-if-empty:not(:has(> :not(.w-condition-invisible))),
+.u-hide-if-empty-cms:not(:has(.w-dyn-item)),
+.w-richtext[class*="u-text-style-"] > :not(h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,span),
+.u-embed-js,
+.u-embed-css {
+	display: none !important;
+}
+
+/* Focus State */
+a, button, [tabindex],
+.w-checkbox-input--inputType-custom,
+.w-form-formradioinput--inputType-custom {
+	outline-offset: var(--focus--offset-outer);
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+.w-checkbox:has(:focus-visible) .w-checkbox-input--inputType-custom,
+.w-radio:has(:focus-visible) .w-form-formradioinput--inputType-custom {
+	outline-color: var(--_theme---text);
+	outline-width: var(--focus--width);
+	outline-style: solid;
+}
+.w-checkbox-input--inputType-custom.w--redirected-focus,
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+	box-shadow: none;
+}
+
+/* Global / Clickable Component */
+.wf-design-mode .g_clickable_wrap {
+	z-index: 0;
+}
+.g_clickable_wrap a[href="#"] {
+	display: none;
+}
+.g_clickable_wrap a[href="#"] ~ button {
+	display: block;
+}
+     </style>
+    </div>
+   </div>
+   <div class="styleguide_guide_wrap">
+    <div class="w-embed">
+     <style>
+      html:not(.wf-design-mode) .styleguide_guide_wrap {
+	display: none;
+}
+.styleguide_guide_layout {
+	counter-reset: gridguides;
+}
+.styleguide_guide_layout > div::before {
+  counter-increment: gridguides;
+  content: counter(gridguides);
+}
+     </style>
+    </div>
+    <div class="styleguide_guide_contain u-container">
+     <div class="styleguide_guide_layout u-grid-custom">
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+      <div class="styleguide_guide_column u-vflex-center-bottom">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="nav w-nav" data-animation="default" data-collapse="medium" data-duration="0" data-easing="ease" data-easing2="ease" data-w-id="6220be0a-1a73-f8a0-0566-343d50a5d5fb" data-wf--global-navbar-transparant--variant="base" role="banner" style="will-change: background; background-color: transparent;">
+    <div class="nav_contain u-container-full">
+     <div aria-controls="w-nav-overlay-0" aria-expanded="false" aria-haspopup="menu" aria-label="menu" class="mobile_menu_button w-nav-button" role="button" style="-webkit-user-select: text;" tabindex="0">
+      <svg class="mobile_menu_open" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+       <g clip-path="url(#clip0_2188_3574)">
+        <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor">
+        </path>
+       </g>
+      </svg>
+      <svg class="mobile_menu_close" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+       <g clip-path="url(#clip0_2188_3577)">
+        <path d="M6.34292 19.4142L19.0708 6.68629L17.6566 5.27208L4.92871 18L6.34292 19.4142Z" fill="currentColor">
+        </path>
+        <path d="M6.34326 5L4.92905 6.41421L17.657 19.1421L19.0712 17.7279L6.34326 5Z" fill="currentColor">
+        </path>
+       </g>
+      </svg>
+     </div>
+     <a aria-label="CDI Solutions Home" class="nav_logo_wrap w-inline-block w--current" href="mailto:adam@cdisolutions.com.au">
+      <img alt="CDI Solutions" class="nav_1_logo" src="./cdisolutionstransperantwhite.png" style="height:56px;width:auto;"/>
+     </a>
+     <nav class="nav_layout w-nav-menu" role="navigation">
+      <div class="nav_scroll">
+       <ul class="nav_links_wrap is-desktop w-list-unstyled" role="list">
+        <li class="nav_1_links_item">
+         <div class="nav_1_dropdown_component w-dropdown" data-delay="400" data-hover="true">
+          <div aria-controls="w-dropdown-list-0" aria-expanded="false" aria-haspopup="menu" class="nav_1_links_link is-desktop w-dropdown-toggle" id="w-dropdown-toggle-0" role="button" tabindex="0">
+           <div class="nav_1_links_text">
+            Sectors
+           </div>
+           <svg class="nav_1_links_svg" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8.99993L12 14.9999L18 8.99988" stroke="currentColor" stroke-miterlimit="16" stroke-width="1.5">
+            </path>
+           </svg>
+          </div>
+          <nav aria-labelledby="w-dropdown-toggle-0" class="nav_1_dropdown_main_wrap is-desktop w-dropdown-list" id="w-dropdown-list-0" style="display: none; opacity: 0; transform: translate3d(0px, 1rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="nav_1_dropdown_main_content">
+            <div class="nav_1_dropdown_main_scroll is-desktop w-dyn-list">
+             <div class="nav_1_dropdown_list w-dyn-items" role="list">
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/689409788241475bfb925832_medical_services.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Healthcare &amp; Aged Care
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/689409644818ae3dc27eed9d_deck.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Hotels &amp; Hospitality
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/689409506d74ee4e85f714d7_king_bed.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Retail &amp; Mixed-Use
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/6894093fe2364f6001520cf1_construction.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Commercial &amp; Office
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/6894092b8d6058a917da40b2_domain.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Industrial &amp; Manufacturing
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/68940916dadbf3dfd6a3638a_precision_manufacturing.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Transport &amp; Infrastructure
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/68940904dadbf3dfd6a361ca_train.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Government &amp; Education
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/689408dda9a33aca97e563c2_school.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Finance &amp; Insurance
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <img alt="" class="nav_1_dropdown_icon" loading="lazy" src="./assets/6894082b1916d96b47824826_attach_money.svg"/>
+                <div class="nav_1_dropdown_text">
+                 Technology &amp; Data Centres
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </nav>
+         </div>
+        </li>
+        <li class="nav_1_links_item">
+         <div class="nav_1_dropdown_component w-dropdown" data-delay="400" data-hover="true">
+          <div aria-controls="w-dropdown-list-1" aria-expanded="false" aria-haspopup="menu" class="nav_1_links_link is-desktop w-dropdown-toggle" id="w-dropdown-toggle-1" role="button" tabindex="0">
+           <div class="nav_1_links_text">
+            Services
+           </div>
+           <svg class="nav_1_links_svg" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8.99993L12 14.9999L18 8.99988" stroke="currentColor" stroke-miterlimit="16" stroke-width="1.5">
+            </path>
+           </svg>
+          </div>
+          <nav aria-labelledby="w-dropdown-toggle-1" class="nav_1_dropdown_main_wrap is-desktop w-dropdown-list" id="w-dropdown-list-1" style="display: none; opacity: 0; transform: translate3d(0px, 1rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="nav_1_dropdown_main_content">
+            <div class="nav_1_dropdown_main_scroll is-desktop w-dyn-list">
+             <div class="nav_1_dropdown_list w-dyn-items" role="list">
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Project Management
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Programme Management
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Construction Management
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Contract Administration
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Superintending
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Project Directorship
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Project Strategy
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Development Feasibility
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Client Representation
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Distressed Project Recovery
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Programme Strategy
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Project Leadership
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Building Refurbishment
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Building Inspections
+                </div>
+               </a>
+              </div>
+              <div class="nav_1_dropdown_item w-dyn-item" role="listitem">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Procurement Management
+                </div>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </nav>
+         </div>
+        </li>
+        <li class="nav_1_links_item">
+         <div class="nav_1_dropdown_component w-dropdown" data-delay="400" data-hover="true">
+          <div aria-controls="w-dropdown-list-2" aria-expanded="false" aria-haspopup="menu" class="nav_1_links_link is-desktop w-dropdown-toggle" id="w-dropdown-toggle-2" role="button" tabindex="0">
+           <div class="nav_1_links_text">
+            About
+           </div>
+           <svg class="nav_1_links_svg" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8.99993L12 14.9999L18 8.99988" stroke="currentColor" stroke-miterlimit="16" stroke-width="1.5">
+            </path>
+           </svg>
+          </div>
+          <nav aria-labelledby="w-dropdown-toggle-2" class="nav_1_dropdown_main_wrap is-desktop w-dropdown-list" id="w-dropdown-list-2" style="display: none; opacity: 0; transform: translate3d(0px, 1rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="nav_1_dropdown_main_content">
+            <div class="nav_1_dropdown_main_scroll is-desktop" data-lenis-prevent="">
+             <ul class="nav_1_dropdown_list" role="list">
+              <li class="nav_1_dropdown_item">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Our Story
+                </div>
+               </a>
+              </li>
+              <li class="nav_1_dropdown_item">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Insights
+                </div>
+               </a>
+              </li>
+              <li class="nav_1_dropdown_item">
+               <a class="nav_1_dropdown_link is-desktop w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="0">
+                <div class="nav_1_dropdown_text">
+                 Projects
+                </div>
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </nav>
+         </div>
+        </li>
+       </ul>
+       <ul class="nav_actions_wrap is-desktop w-list-unstyled" role="list">
+        <li class="nav_1_buttons_item is-main is-desktop">
+         <div class="btn_main_wrap is-grow-tablet">
+          <div class="g_clickable_wrap">
+           <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+            <span class="g_clickable_text u-sr-only">
+             Contact
+            </span>
+           </a>
+           <button class="g_clickable_btn" type="button">
+            <span class="g_clickable_text u-sr-only">
+             Contact
+            </span>
+           </button>
+          </div>
+          <div aria-hidden="true" class="btn_main_text">
+           Contact
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+     </nav>
+     <div class="mobile_cta_button">
+      <div class="btn_main_wrap" data-wf--btn-main--style="primary">
+       <div class="g_clickable_wrap">
+        <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+         <span class="g_clickable_text u-sr-only">
+          Contact
+         </span>
+        </a>
+        <button class="g_clickable_btn" type="button">
+         <span class="g_clickable_text u-sr-only">
+          Contact
+         </span>
+        </button>
+       </div>
+       <div aria-hidden="true" class="btn_main_text">
+        Contact
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0">
+    </div>
+   </div>
+   <main class="main">
+    <section class="hero_main_wrap u-text-align-left u-theme-dark">
+     <div class="g_spacer w-variant-8cc18b30-4618-8767-0111-f6abfe45aaa3" data-wf--global-spacer--section-space="large">
+     </div>
+     <div class="hero_main_contain u-container">
+      <div class="hero_main_layout u-vflex-center-left u-gap-4">
+       <div class="hero_main_subheading u-text-style-h5 u-mb-3 u-weight-bold">
+        Australia's Partner for
+       </div>
+       <h1 class="g_heading_wrap u-text-style-h1 u-mb-6" data-wf--global-heading--settings-font-style="base">
+        <div class="g_heading" data-anim-heading="false">
+         Strategic Project &amp; Construction Management
+        </div>
+       </h1>
+       <div class="cdi-hero-cta-row">
+        <div class="btn_main_wrap" data-wf--btn-main--style="primary" style="width:fit-content;">
+         <div class="g_clickable_wrap">
+          <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+           <span class="g_clickable_text u-sr-only">
+            Get in Touch
+           </span>
+          </a>
+          <button class="g_clickable_btn" type="button">
+           <span class="g_clickable_text u-sr-only">
+            Get in Touch
+           </span>
+          </button>
+         </div>
+         <div aria-hidden="true" class="btn_main_text">
+          Get in Touch
+         </div>
+         <div class="btn_main_icon">
+          <img alt="" loading="lazy" src="./assets/689172897ff66ec5c65b60fd_CDI Solutions_icon.svg"/>
+         </div>
+        </div>
+        <a class="cdi-hero-badge-wrap" href="https://buy.nsw.gov.au/scheme/D7BD8CCD-A397-DAFE-759AD93ED43DBB1C" target="_blank" rel="noopener">
+         <img src="./SCM026refresh.png" alt="NSW Government Registered Supplier SCM0256" class="cdi-hero-badge">
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="g_spacer w-variant-8cc18b30-4618-8767-0111-f6abfe45aaa3" data-wf--global-spacer--section-space="large">
+     </div>
+     <div class="hero_logo_wrap">
+      <div class="hero_logo_top u-mb-5 u-gap-7 u-container-full">
+       <div class="hero_logo_line">
+       </div>
+       <div class="hero_logo_text u-text-style-main u-color-faded">
+        Having proudly partnered with:
+       </div>
+       <div class="hero_logo_line">
+       </div>
+      </div>
+      <div class="hero_marquee">
+       <div class="w-embed">
+        <style>
+         @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.scroll {
+  animation: scroll 50s linear infinite;
+}
+
+.hero_logo {
+  -webkit-transform: translateZ(0);
+}
+        </style>
+       </div>
+       <div class="hero_marquee_wrap w-dyn-list">
+        <div class="hero_marquee_item scroll w-dyn-items" role="list" style="transform: translate3d(-45.3179%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb4fbce0ccf9a34dceda0_bolton clarke logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa8061a1e81a4c8bbc62_689ea9217db4c47518af2ad6_Logo%20Clients%2001.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb35ab727d51ee6622d25_Colliers_logo.svg 1.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa8007e885d00bf4d57e_689ea93ff985679b98ea28e5_Logo%20Clients%2003.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa81a1099d46505e08f2_689ea94c07ece4434c0131d2_Logo%20Clients%2004.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb2770e5783dee010fe59_JLL logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" sizes="(max-width: 479px) 100vw, 574px, (max-width: 479px) 100vw, 345px, 100vw" src="./assets/696eb2666ef8f70da4a30f6e_pullman logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa809420f9864ea5232e_689ea97262e4170d0dd4518c_Logo%20Clients%2007.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa81cd9cfafaacc8896d_689ea9ada382ce0e00ae6bef_Logo%20Clients%2009.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa800fb6a7c8bbc315dc_689ea9b33c15f37aee1c7e51_Logo%20Clients%2010.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb22e96145c4b938ac19a_lendlease logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa9e1dc6136b6eda22a1_Logo Clients 12.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaaa6e5370ab60e954301_Logo Clients 13.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaaadaa11bd90b66ba62c_Logo Clients 14.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaab55da0c14e7a1929c4_Logo Clients 15.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb25176e87053a7d493c9_bupa logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaace327d9b036469b808_Logo Clients 18.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaad803d6e911776b9057_Logo Clients 19.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaae4b7cf5ee64bcb149b_Logo Clients 20.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaaf80f77d5a65243bd07_Logo Clients 21.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eab0a223e41ec14082f38_Logo Clients 22.png"/>
+         </div>
+        </div>
+       </div>
+       <div class="hero_marquee_wrap w-dyn-list">
+        <div class="hero_marquee_item scroll w-dyn-items" role="list" style="transform: translate3d(-45.3179%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb4fbce0ccf9a34dceda0_bolton clarke logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa8061a1e81a4c8bbc62_689ea9217db4c47518af2ad6_Logo%20Clients%2001.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb35ab727d51ee6622d25_Colliers_logo.svg 1.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa8007e885d00bf4d57e_689ea93ff985679b98ea28e5_Logo%20Clients%2003.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa81a1099d46505e08f2_689ea94c07ece4434c0131d2_Logo%20Clients%2004.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb2770e5783dee010fe59_JLL logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" sizes="(max-width: 479px) 100vw, 574px, (max-width: 479px) 100vw, 345px, 100vw" src="./assets/696eb2666ef8f70da4a30f6e_pullman logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa809420f9864ea5232e_689ea97262e4170d0dd4518c_Logo%20Clients%2007.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa81cd9cfafaacc8896d_689ea9ada382ce0e00ae6bef_Logo%20Clients%2009.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa800fb6a7c8bbc315dc_689ea9b33c15f37aee1c7e51_Logo%20Clients%2010.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb22e96145c4b938ac19a_lendlease logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaa9e1dc6136b6eda22a1_Logo Clients 12.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaaa6e5370ab60e954301_Logo Clients 13.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaaadaa11bd90b66ba62c_Logo Clients 14.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaab55da0c14e7a1929c4_Logo Clients 15.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/696eb25176e87053a7d493c9_bupa logo.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaace327d9b036469b808_Logo Clients 18.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaad803d6e911776b9057_Logo Clients 19.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaae4b7cf5ee64bcb149b_Logo Clients 20.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eaaf80f77d5a65243bd07_Logo Clients 21.png"/>
+         </div>
+         <div class="hero_marquee_logo_wrap w-dyn-item" role="listitem">
+          <img alt="" class="hero_marquee_logo" loading="lazy" src="./assets/689eab0a223e41ec14082f38_Logo Clients 22.png"/>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="hero_main_bg-wrap">
+      <div class="hero_main_bg-overlay">
+      </div>
+      <img alt="" class="hero_main_bg-img" loading="lazy" src="./assets/6890e5210ab2f932cc2ee776_Excorp_Hero.webp"/>
+     </div>
+    </section>
+    <section class="industries_wrap u-theme-dark">
+     <div class="industries_contain u-container u-vflex-stretch-center u-gap-8">
+      <div class="g_header_layout u-hflex-between-bottom u-gap-6 u-grid-flex">
+       <div class="g_layout_text u-vflex-left-top u-gap-3">
+        <h2 class="g_heading_wrap w-variant-14704ec6-02ff-e8b0-a31c-e934e226013e u-mb-3" data-wf--global-heading--settings-font-style="h3">
+         <div class="g_heading" data-anim-heading="false">
+          Sectors
+         </div>
+        </h2>
+        <div class="g_paragraph w-richtext u-max-width-80ch u-color-faded" data-anim-para="false" data-wf--global-paragraph--settings-font-style="main">
+         <p>
+          CDI Solutions partners with organisations across key sectors to deliver expert project leadership, construction management and independent client representation, protecting your interests and your investment.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="cdi-sectors-scroll">
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689408baa2e952c7d869d78e_Excorp_industries_img.webp" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/689409788241475bfb925832_medical_services.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Healthcare &amp; Aged Care</h3>
+         <p class="cdi-sector-card-tagline">Precision delivery in sensitive environments.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689d81b0ab230d411e53cab7_pexels-rachel-claire-6126926.jpg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/689409644818ae3dc27eed9d_deck.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Hotels &amp; Hospitality</h3>
+         <p class="cdi-sector-card-tagline">Delivering exceptional hospitality environments.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/68c0d9cc32b08c07ca2f04c4_d4395eee5554a37397e1b329f82c390e.jpeg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/689409506d74ee4e85f714d7_king_bed.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Retail &amp; Mixed-Use</h3>
+         <p class="cdi-sector-card-tagline">Managing complexity in high-traffic environments.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689d89221cc9d52666b5bd09_scott-blake-x-ghf9LjrVg-unsplash (1).jpg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/6894093fe2364f6001520cf1_construction.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Commercial &amp; Office</h3>
+         <p class="cdi-sector-card-tagline">Excellence in commercial project delivery.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689d8b09873a609139f2418c_IMG_6840.jpg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/6894092b8d6058a917da40b2_domain.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Industrial &amp; Manufacturing</h3>
+         <p class="cdi-sector-card-tagline">Capital works for complex industrial environments.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689d8dabcd32901b1a35494e_dominik-vanyi-1HEDPbH6HIE-unsplash.jpg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/68940916dadbf3dfd6a3638a_precision_manufacturing.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Transport &amp; Infrastructure</h3>
+         <p class="cdi-sector-card-tagline">Client-side leadership for transport projects.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689d8f26402c61b56d1e8d48_rhys-moult-7eaFIKeo1MQ-unsplash.jpg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/68940904dadbf3dfd6a361ca_train.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Government &amp; Public Sector</h3>
+         <p class="cdi-sector-card-tagline">Trusted by government at every level.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689d9151873a609139f42995_pexels-themortzmedia-12532604.jpg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/689408dda9a33aca97e563c2_school.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Finance &amp; Insurance</h3>
+         <p class="cdi-sector-card-tagline">Capital works for finance sector clients.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+       <a class="cdi-sector-card" href="mailto:adam@cdisolutions.com.au">
+        <img class="cdi-sector-card-img" src="./assets/689e8d2a64526a99a3d6f307_pexels-pixabay-268941.jpg" alt="" loading="lazy">
+        <div class="cdi-sector-card-overlay"></div>
+        <div class="cdi-sector-card-content">
+         <img class="cdi-sector-card-icon" src="./assets/6894082b1916d96b47824826_attach_money.svg" alt="" loading="lazy">
+         <h3 class="cdi-sector-card-title">Education &amp; Research</h3>
+         <p class="cdi-sector-card-tagline">Building better learning environments.</p>
+         <p class="cdi-sector-card-cta">Learn more &#8594;</p>
+        </div>
+       </a>
+      </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="services_wrap u-theme-light-blue">
+     <div class="services_contain u-container u-vflex-stretch-center u-gap-8">
+      <div class="g_header_layout u-hflex-between-bottom u-gap-6 u-grid-flex">
+       <div class="g_layout_text u-vflex-left-top u-gap-3">
+        <h2 class="g_heading_wrap w-variant-14704ec6-02ff-e8b0-a31c-e934e226013e u-mb-3" data-wf--global-heading--settings-font-style="h3">
+         <div class="g_heading" data-anim-heading="false">
+          Services
+         </div>
+        </h2>
+        <div class="g_paragraph w-richtext u-max-width-80ch u-color-faded" data-anim-para="false" data-wf--global-paragraph--settings-font-style="main">
+         <p>
+          CDI Solutions delivers tailored project management, construction management and advisory services covering the complete lifecycle of your capital works programme.
+         </p>
+        </div>
+       </div>
+       <div class="u-flex-noshrink">
+        <div class="btn_main_wrap" data-wf--btn-main--style="primary">
+         <div class="g_clickable_wrap">
+          <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+           <span class="g_clickable_text u-sr-only">
+            Explore all services
+           </span>
+          </a>
+          <button class="g_clickable_btn" type="button">
+           <span class="g_clickable_text u-sr-only">
+            Explore all services
+           </span>
+          </button>
+         </div>
+         <div aria-hidden="true" class="btn_main_text">
+          Explore all services
+         </div>
+         <div class="btn_main_icon">
+          <img alt="" loading="lazy" src="./assets/689172897ff66ec5c65b60fd_CDI Solutions_icon.svg"/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="services_layout u-container-small">
+       <div class="stream_list_wrap w-dyn-list">
+        <div class="stream_list w-dyn-items" role="list">
+         <div class="stream_item w-dyn-item" data-w-id="4ad57a98-d84c-738a-2adb-f6089c84d78b" role="listitem">
+          <div class="services-card u-vflex-stretch-top u-gap-7" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(0.95, 0.95, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="services_top u-hflex-between-center u-gap-5 u-zindex-1">
+            <div class="services_top_left u-gap-4">
+             <div class="services_no_wrap u-hflex-left-center">
+              <div class="services_no u-weight-bold">
+               0
+              </div>
+              <div class="services_no u-weight-bold">
+               1
+              </div>
+             </div>
+             <div class="services_line">
+             </div>
+            </div>
+            <h3 class="services_title u-weight-bold">
+             Strategy
+            </h3>
+           </div>
+           <div class="services_list_wrap u-align-self-center w-dyn-list">
+            <div class="services_content u-align-self-center u-vflex-center-top u-zindex-1 w-dyn-items" role="list">
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Project Directorship
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Project Strategy
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Development Feasibility
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Programme Strategy
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Project Leadership
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="services_btn-wrap u-align-self-end u-zindex-1">
+            <a class="services_btn blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+             <svg class="services_btn-icon" fill="none" viewbox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.0001 12L30 24.0001L18 36" stroke="currentColor" stroke-miterlimit="16" stroke-width="3">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <div class="services_img_wrap u-cover-absolute u-zindex-0">
+            <div class="g_visual_overlay">
+            </div>
+            <img alt="" class="services_img u-cover-absolute" loading="lazy" src="./assets/6892c94ee9dbb4d4c729ab5f_Our services bg.webp"/>
+           </div>
+          </div>
+         </div>
+         <div class="stream_item w-dyn-item" data-w-id="4ad57a98-d84c-738a-2adb-f6089c84d78b" role="listitem">
+          <div class="services-card u-vflex-stretch-top u-gap-7" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(0.95, 0.95, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="services_top u-hflex-between-center u-gap-5 u-zindex-1">
+            <div class="services_top_left u-gap-4">
+             <div class="services_no_wrap u-hflex-left-center">
+              <div class="services_no u-weight-bold">
+               0
+              </div>
+              <div class="services_no u-weight-bold">
+               2
+              </div>
+             </div>
+             <div class="services_line">
+             </div>
+            </div>
+            <h3 class="services_title u-weight-bold">
+             Delivery
+            </h3>
+           </div>
+           <div class="services_list_wrap u-align-self-center w-dyn-list">
+            <div class="services_content u-align-self-center u-vflex-center-top u-zindex-1 w-dyn-items" role="list">
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Project Management
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Programme Management
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Construction Management
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Contract Administration
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Superintending
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="services_btn-wrap u-align-self-end u-zindex-1">
+            <a class="services_btn blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+             <svg class="services_btn-icon" fill="none" viewbox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.0001 12L30 24.0001L18 36" stroke="currentColor" stroke-miterlimit="16" stroke-width="3">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <div class="services_img_wrap u-cover-absolute u-zindex-0">
+            <div class="g_visual_overlay">
+            </div>
+            <img alt="" class="services_img u-cover-absolute" loading="lazy" src="./assets/6891c8ec5e048161a759c072_Excorp_industries_slider-img.webp"/>
+           </div>
+          </div>
+         </div>
+         <div class="stream_item w-dyn-item" data-w-id="4ad57a98-d84c-738a-2adb-f6089c84d78b" role="listitem">
+          <div class="services-card u-vflex-stretch-top u-gap-7" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(0.95, 0.95, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="services_top u-hflex-between-center u-gap-5 u-zindex-1">
+            <div class="services_top_left u-gap-4">
+             <div class="services_no_wrap u-hflex-left-center">
+              <div class="services_no u-weight-bold">
+               0
+              </div>
+              <div class="services_no u-weight-bold">
+               3
+              </div>
+             </div>
+             <div class="services_line">
+             </div>
+            </div>
+            <h3 class="services_title u-weight-bold">
+             Advisory
+            </h3>
+           </div>
+           <div class="services_list_wrap u-align-self-center w-dyn-list">
+            <div class="services_content u-align-self-center u-vflex-center-top u-zindex-1 w-dyn-items" role="list">
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Building Refurbishment
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Client Representation
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Building Inspections
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Distressed Project Recovery
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+             <div class="services_item w-dyn-item" role="listitem">
+              <a class="services_link u-hflex-between-center blur-button w-inline-block" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb26" href="mailto:adam@cdisolutions.com.au">
+               <h4>
+                Procurement Management
+               </h4>
+               <svg class="services_arrow" data-w-id="ac910d5a-4353-01f3-eb7e-4896cd42eb28" fill="none" style="transform: translate3d(0rem, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+                </path>
+               </svg>
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="services_btn-wrap u-align-self-end u-zindex-1">
+            <a class="services_btn blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+             <svg class="services_btn-icon" fill="none" viewbox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.0001 12L30 24.0001L18 36" stroke="currentColor" stroke-miterlimit="16" stroke-width="3">
+              </path>
+             </svg>
+            </a>
+           </div>
+           <div class="services_img_wrap u-cover-absolute u-zindex-0">
+            <div class="g_visual_overlay">
+            </div>
+            <img alt="" class="services_img u-cover-absolute" loading="lazy" src="./assets/68c13a321b9b0c6e9fae97d3_IMG_1296.jpg"/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div aria-roledescription="carousel" class="splide u-container-small u-display-none splide--slide splide--ttb splide--draggable is-active is-initialized" id="my-splide" role="region">
+      <div aria-atomic="true" aria-live="polite" class="splide__track w-dyn-list splide__track--slide splide__track--ttb splide__track--draggable" id="my-splide-track" style="padding-top: 0px; padding-bottom: 0px; height: calc(0px + 100vh);">
+       <div class="splide__list w-dyn-items" id="my-splide-list" role="presentation" style="transform: translateY(0px);">
+        <div aria-label="1 of 3" aria-roledescription="slide" class="splide__slide w-dyn-item is-active is-visible" id="my-splide-slide01" role="tabpanel" style="height: calc(100%);">
+         <div class="services-card u-vflex-stretch-top u-gap-7">
+          <div class="services_top u-hflex-between-center u-gap-5 u-zindex-1">
+           <div class="services_no_wrap u-hflex-left-center">
+            <div class="services_no u-weight-bold">
+             0
+            </div>
+            <div class="services_no u-weight-bold">
+             1
+            </div>
+           </div>
+           <div class="services_line">
+           </div>
+           <div class="services_title u-weight-bold">
+            Strategy
+           </div>
+          </div>
+          <div class="services_list_wrap u-align-self-center w-dyn-list">
+           <div class="services_content u-align-self-center u-vflex-center-top u-zindex-1 w-dyn-items" role="list">
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Project Directorship
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Project Strategy
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Development Feasibility
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Programme Strategy
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Project Leadership
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="services_btn-wrap u-align-self-end u-zindex-1">
+           <a class="services_btn blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+            <svg class="services_btn-icon" fill="none" viewbox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg">
+             <path d="M18.0001 12L30 24.0001L18 36" stroke="currentColor" stroke-miterlimit="16" stroke-width="3">
+             </path>
+            </svg>
+           </a>
+          </div>
+          <div class="services_img_wrap u-cover-absolute u-zindex-0">
+           <div class="g_visual_overlay">
+           </div>
+           <img alt="" class="services_img u-cover-absolute" loading="lazy" src="./assets/6892c94ee9dbb4d4c729ab5f_Our services bg.webp"/>
+          </div>
+         </div>
+        </div>
+        <div aria-label="2 of 3" aria-roledescription="slide" class="splide__slide w-dyn-item is-visible is-next" id="my-splide-slide02" role="tabpanel" style="height: calc(100%);">
+         <div class="services-card u-vflex-stretch-top u-gap-7">
+          <div class="services_top u-hflex-between-center u-gap-5 u-zindex-1">
+           <div class="services_no_wrap u-hflex-left-center">
+            <div class="services_no u-weight-bold">
+             0
+            </div>
+            <div class="services_no u-weight-bold">
+             2
+            </div>
+           </div>
+           <div class="services_line">
+           </div>
+           <div class="services_title u-weight-bold">
+            Delivery
+           </div>
+          </div>
+          <div class="services_list_wrap u-align-self-center w-dyn-list">
+           <div class="services_content u-align-self-center u-vflex-center-top u-zindex-1 w-dyn-items" role="list">
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Project Management
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Programme Management
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Construction Management
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Contract Administration
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Superintending
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="services_btn-wrap u-align-self-end u-zindex-1">
+           <a class="services_btn blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+            <svg class="services_btn-icon" fill="none" viewbox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg">
+             <path d="M18.0001 12L30 24.0001L18 36" stroke="currentColor" stroke-miterlimit="16" stroke-width="3">
+             </path>
+            </svg>
+           </a>
+          </div>
+          <div class="services_img_wrap u-cover-absolute u-zindex-0">
+           <div class="g_visual_overlay">
+           </div>
+           <img alt="" class="services_img u-cover-absolute" loading="lazy" src="./assets/6891c8ec5e048161a759c072_Excorp_industries_slider-img.webp"/>
+          </div>
+         </div>
+        </div>
+        <div aria-label="3 of 3" aria-roledescription="slide" class="splide__slide w-dyn-item" id="my-splide-slide03" role="tabpanel" style="height: calc(100%);">
+         <div class="services-card u-vflex-stretch-top u-gap-7">
+          <div class="services_top u-hflex-between-center u-gap-5 u-zindex-1">
+           <div class="services_no_wrap u-hflex-left-center">
+            <div class="services_no u-weight-bold">
+             0
+            </div>
+            <div class="services_no u-weight-bold">
+             3
+            </div>
+           </div>
+           <div class="services_line">
+           </div>
+           <div class="services_title u-weight-bold">
+            Advisory
+           </div>
+          </div>
+          <div class="services_list_wrap u-align-self-center w-dyn-list">
+           <div class="services_content u-align-self-center u-vflex-center-top u-zindex-1 w-dyn-items" role="list">
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Building Refurbishment
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Client Representation
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Building Inspections
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Distressed Project Recovery
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div class="services_item w-dyn-item" role="listitem">
+             <a class="services_link u-hflex-between-center blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+              <div>
+               Procurement Management
+              </div>
+              <svg class="services_arrow" fill="none" viewbox="0 0 40 40" width="100%" xmlns="http://www.w3.org/2000/svg">
+               <path d="M18.3421 10L30 10.0004L29.9999 21.6033M10 30L29.3322 10.6681" stroke="currentColor" stroke-width="2.5">
+               </path>
+              </svg>
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="services_btn-wrap u-align-self-end u-zindex-1">
+           <a class="services_btn blur-button w-inline-block" href="mailto:adam@cdisolutions.com.au">
+            <svg class="services_btn-icon" fill="none" viewbox="0 0 48 48" width="100%" xmlns="http://www.w3.org/2000/svg">
+             <path d="M18.0001 12L30 24.0001L18 36" stroke="currentColor" stroke-miterlimit="16" stroke-width="3">
+             </path>
+            </svg>
+           </a>
+          </div>
+          <div class="services_img_wrap u-cover-absolute u-zindex-0">
+           <div class="g_visual_overlay">
+           </div>
+           <img alt="" class="services_img u-cover-absolute" loading="lazy" src="./assets/68c13a321b9b0c6e9fae97d3_IMG_1296.jpg"/>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <ul aria-label="Select a slide to show" aria-orientation="vertical" class="splide__pagination splide__pagination--ttb" role="tablist">
+       <li role="presentation">
+        <button aria-controls="my-splide-slide01" aria-label="Go to slide 1" aria-selected="true" class="splide__pagination__page is-active" role="tab" type="button">
+        </button>
+       </li>
+       <li role="presentation">
+        <button aria-controls="my-splide-slide02" aria-label="Go to slide 2" class="splide__pagination__page" role="tab" tabindex="-1" type="button">
+        </button>
+       </li>
+       <li role="presentation">
+        <button aria-controls="my-splide-slide03" aria-label="Go to slide 3" class="splide__pagination__page" role="tab" tabindex="-1" type="button">
+        </button>
+       </li>
+      </ul>
+     </div>
+    </section>
+   </main>
+  </div>
+  <section class="cdi-approach-section">
+   <div class="cdi-approach-bg" style="background-image: url(./images/renderpeople-gmbh-2020-05-06-renderpeople-office-01-wireframe.jpg);"></div>
+   <div class="cdi-approach-overlay"></div>
+   <div class="cdi-approach-inner u-container">
+    <div class="cdi-approach-header">
+     <div class="cdi-approach-header-left">
+      <h2 class="cdi-approach-heading">Our Approach</h2>
+     </div>
+     <p class="cdi-approach-intro">We act as your independent representative, protecting your interests, controlling your programme and ensuring your project is delivered with the rigour it deserves.</p>
+    </div>
+    <div class="cdi-approach-pillars">
+     <div class="cdi-approach-pillar">
+      <div class="cdi-approach-num">01</div>
+      <h3 class="cdi-approach-pillar-title">Independent Representation</h3>
+      <p class="cdi-approach-pillar-desc">We act solely in your interest at every stage, no conflicts, no competing priorities. Our independence gives you the clear, expert advocacy your project demands from inception to handover.</p>
+     </div>
+     <div class="cdi-approach-pillar">
+      <div class="cdi-approach-num">02</div>
+      <h3 class="cdi-approach-pillar-title">Programme Rigour</h3>
+      <p class="cdi-approach-pillar-desc">Every engagement is structured around clear milestones, proactive cost control and transparent risk management, keeping your programme on time, on budget and fully accountable throughout.</p>
+     </div>
+     <div class="cdi-approach-pillar">
+      <div class="cdi-approach-num">03</div>
+      <h3 class="cdi-approach-pillar-title">Tailored Delivery</h3>
+      <p class="cdi-approach-pillar-desc">From development feasibility to construction management, we tailor our approach to your specific objectives, constraints and stakeholders, delivering outcomes that are built around your project, not a template.</p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="cdi-who-section">
+   <div class="cdi-who-image-col">
+    <div class="cdi-who-img-placeholder">Image placeholder
+     <div class="cdi-who-qual">
+      <img src="./images/SCM0256.png" alt="NSW Government Registered Supplier SCM0256" class="cdi-who-qual-badge">
+     </div>
+    </div>
+   </div>
+   <div class="cdi-who-content-col">
+    <h2 class="cdi-who-heading">Who We Are</h2>
+    <p class="cdi-who-body">Since 2003, CDI Solutions has delivered expert project leadership, construction management and independent client representation across Australia.</p>
+    <p class="cdi-who-body">We work alongside government agencies, institutional owners and private developers, bringing the experience, independence and programme discipline that complex capital works demand.</p>
+    <div class="btn_main_wrap" data-wf--btn-main--style="primary" style="width:fit-content;margin-top:1rem;">
+     <div class="g_clickable_wrap">
+      <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+       <span class="g_clickable_text u-sr-only">Learn more</span>
+      </a>
+      <button class="g_clickable_btn" type="button">
+       <span class="g_clickable_text u-sr-only">Learn more</span>
+      </button>
+     </div>
+     <div aria-hidden="true" class="btn_main_text">Learn more</div>
+     <div class="btn_main_icon">
+      <img alt="" loading="lazy" src="./assets/689172897ff66ec5c65b60fd_CDI Solutions_icon.svg"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="case_wrap u-theme-light">
+   <div class="home-case_contain u-container u-vflex-stretch-top u-gap-8 u-zindex-1">
+    <div class="home-case_top u-vflex-center-top u-text-align-center u-gap-5">
+     <h2 class="g_heading_wrap w-variant-14704ec6-02ff-e8b0-a31c-e934e226013e" data-wf--global-heading--settings-font-style="h3">
+      <div class="g_heading" data-anim-heading="false">
+       Projects
+      </div>
+     </h2>
+     <div class="home-insight_paragraph u-text-style-large u-max-width-80ch u-color-faded">
+      See how CDI Solutions partners with leading organisations across Australia to deliver complex capital works programmes with precision, independence and exceptional outcomes.
+     </div>
+    </div>
+    <div class="home-case_layout u-hflex-center-stretch u-gap-10 u-grid-flex">
+     <div class="home-case_list_wrap w-dyn-list">
+      <div role="list" class="w-dyn-items project-cards-grid">
+
+       <div role="listitem" class="w-dyn-item">
+        <div class="insight_content u-vflex-stretch-bottom">
+         <div class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div class="insight_img_overlay u-cover-absolute u-zindex-1"></div>
+          <div class="cdi-project-placeholder u-cover-absolute"></div>
+         </div>
+         <div class="insight_bottom">
+          <div class="cdi-project-sector">Commercial</div>
+          <div class="insight_title">Pullman Hotel Refurbishment</div>
+          <div class="cdi-project-tags">
+           <span class="cdi-project-tag">Construction Management</span>
+           <span class="cdi-project-tag">Sydney</span>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <div role="listitem" class="w-dyn-item">
+        <div class="insight_content u-vflex-stretch-bottom">
+         <div class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div class="insight_img_overlay u-cover-absolute u-zindex-1"></div>
+          <div class="cdi-project-placeholder u-cover-absolute"></div>
+         </div>
+         <div class="insight_bottom">
+          <div class="cdi-project-sector">Healthcare</div>
+          <div class="insight_title">Bupa Aged Care Facility</div>
+          <div class="cdi-project-tags">
+           <span class="cdi-project-tag">Programme Management</span>
+           <span class="cdi-project-tag">Melbourne</span>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <div role="listitem" class="w-dyn-item">
+        <div class="insight_content u-vflex-stretch-bottom">
+         <div class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div class="insight_img_overlay u-cover-absolute u-zindex-1"></div>
+          <div class="cdi-project-placeholder u-cover-absolute"></div>
+         </div>
+         <div class="insight_bottom">
+          <div class="cdi-project-sector">Education</div>
+          <div class="insight_title">University Campus Upgrade</div>
+          <div class="cdi-project-tags">
+           <span class="cdi-project-tag">Project Strategy</span>
+           <span class="cdi-project-tag">Brisbane</span>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <div role="listitem" class="w-dyn-item">
+        <div class="insight_content u-vflex-stretch-bottom">
+         <div class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div class="insight_img_overlay u-cover-absolute u-zindex-1"></div>
+          <div class="cdi-project-placeholder u-cover-absolute"></div>
+         </div>
+         <div class="insight_bottom">
+          <div class="cdi-project-sector">Retail</div>
+          <div class="insight_title">Lendlease Retail Precinct</div>
+          <div class="cdi-project-tags">
+           <span class="cdi-project-tag">Contract Administration</span>
+           <span class="cdi-project-tag">Perth</span>
+          </div>
+         </div>
+        </div>
+       </div>
+
+      </div>
+     </div>
+    </div>
+    <div class="button_center">
+     <div class="btn_main_wrap" data-wf--btn-main--style="primary">
+      <div class="g_clickable_wrap">
+       <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+        <span class="g_clickable_text u-sr-only">
+         Explore all projects
+        </span>
+       </a>
+       <button class="g_clickable_btn" type="button">
+        <span class="g_clickable_text u-sr-only">
+         Explore all projects
+        </span>
+       </button>
+      </div>
+      <div aria-hidden="true" class="btn_main_text">
+       Explore all projects
+      </div>
+      <div class="btn_main_icon">
+       <img alt="" loading="lazy" src="./assets/689172897ff66ec5c65b60fd_CDI Solutions_icon.svg"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="insight_wrap u-theme-light">
+   <div class="insight_contain u-container u-vflex-stretch-top u-gap-8">
+    <div class="insight_layout">
+     <div class="insight_layout-top u-hflex-between-center">
+      <h2 class="g_heading_wrap u-text-style-h3" data-wf--global-heading--settings-font-style="base">
+       <div class="g_heading" data-anim-heading="false">
+        Insights
+       </div>
+      </h2>
+      <div class="btn_main_wrap" data-wf--btn-main--style="primary">
+       <div class="g_clickable_wrap">
+        <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+         <span class="g_clickable_text u-sr-only">
+          Discover More
+         </span>
+        </a>
+        <button class="g_clickable_btn" type="button">
+         <span class="g_clickable_text u-sr-only">
+          Discover More
+         </span>
+        </button>
+       </div>
+       <div aria-hidden="true" class="btn_main_text">
+        Discover More
+       </div>
+       <div class="btn_main_icon">
+        <img alt="" loading="lazy" src="./assets/689172897ff66ec5c65b60fd_CDI Solutions_icon.svg"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div aria-label="carousel" class="insight_slider w-slider" data-animation="slide" data-autoplay="false" data-autoplay-limit="0" data-delay="4000" data-disable-swipe="false" data-duration="500" data-easing="ease" data-hide-arrows="false" data-infinite="false" data-nav-spacing="3" fs-cmsslider-element="slider" role="region">
+     <div class="insight_slider_mask w-slider-mask" id="w-slider-mask-0">
+      <div aria-atomic="true" aria-live="off" class="w-slider-aria-label" data-wf-ignore="">
+      </div>
+      <div aria-label="1 of 4" class="insight_slider_item w-slide" role="group" style="transition: all; transform: translateX(0px); opacity: 1;">
+       <div class="insight_col_item w-dyn-item">
+        <div class="insight_content u-vflex-stretch-bottom">
+         <div class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div class="insight_img_overlay u-cover-absolute u-zindex-1">
+          </div>
+          <img alt="" class="insight_img u-cover u-zindex-0" loading="lazy" sizes="100vw" src="./assets/68facea2fd97ba6e127c404c_IMG_5638.jpg"/>
+         </div>
+         <div class="insight_bottom u-vflex-left-top u-gap-6 u-zindex-2">
+          <div class="insight_desc u-vflex-left-top u-gap-4">
+           <div class="insight_date u-text-style-main">
+            October 24, 2025
+           </div>
+           <h3 class="insight_title">
+            How independent client representation saves projects, and money
+           </h3>
+           <p class="u-line-clamp-2 w-dyn-bind-empty">
+           </p>
+          </div>
+          <a class="btn_main_wrap is-outline-white w-inline-block" href="mailto:adam@cdisolutions.com.au">
+           <div class="btn_main_text secondary-5">
+            Read More
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div aria-hidden="true" aria-label="2 of 4" class="insight_slider_item w-slide" role="group" style="transition: all; transform: translateX(0px); opacity: 1;">
+       <div aria-hidden="true" class="insight_col_item w-dyn-item">
+        <div aria-hidden="true" class="insight_content u-vflex-stretch-bottom">
+         <div aria-hidden="true" class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div aria-hidden="true" class="insight_img_overlay u-cover-absolute u-zindex-1">
+          </div>
+          <img alt="" aria-hidden="true" class="insight_img u-cover u-zindex-0" loading="lazy" sizes="100vw" src="./assets/68facd426a046caa34655a1d_IMG_6934.jpg"/>
+         </div>
+         <div aria-hidden="true" class="insight_bottom u-vflex-left-top u-gap-6 u-zindex-2">
+          <div aria-hidden="true" class="insight_desc u-vflex-left-top u-gap-4">
+           <div aria-hidden="true" class="insight_date u-text-style-main">
+            October 24, 2025
+           </div>
+           <h3 aria-hidden="true" class="insight_title">
+            Development feasibility: getting the numbers right before you commit
+           </h3>
+           <p aria-hidden="true" class="u-line-clamp-2 w-dyn-bind-empty">
+           </p>
+          </div>
+          <a aria-hidden="true" class="btn_main_wrap is-outline-white w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="-1">
+           <div aria-hidden="true" class="btn_main_text secondary-5">
+            Read More
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div aria-hidden="true" aria-label="3 of 4" class="insight_slider_item w-slide" role="group" style="transition: all; transform: translateX(0px); opacity: 1;">
+       <div aria-hidden="true" class="insight_col_item w-dyn-item">
+        <div aria-hidden="true" class="insight_content u-vflex-stretch-bottom">
+         <div aria-hidden="true" class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div aria-hidden="true" class="insight_img_overlay u-cover-absolute u-zindex-1">
+          </div>
+          <img alt="" aria-hidden="true" class="insight_img u-cover u-zindex-0" loading="lazy" sizes="100vw" src="./assets/68fac81860379c5ec54a7814_IMG_2552.jpg"/>
+         </div>
+         <div aria-hidden="true" class="insight_bottom u-vflex-left-top u-gap-6 u-zindex-2">
+          <div aria-hidden="true" class="insight_desc u-vflex-left-top u-gap-4">
+           <div aria-hidden="true" class="insight_date u-text-style-main">
+            October 24, 2025
+           </div>
+           <h3 aria-hidden="true" class="insight_title">
+            Distressed project recovery: when to call in specialist help
+           </h3>
+           <p aria-hidden="true" class="u-line-clamp-2 w-dyn-bind-empty">
+           </p>
+          </div>
+          <a aria-hidden="true" class="btn_main_wrap is-outline-white w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="-1">
+           <div aria-hidden="true" class="btn_main_text secondary-5">
+            Read More
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div aria-hidden="true" aria-label="4 of 4" class="insight_slider_item w-slide" role="group" style="transition: all; transform: translateX(0px); opacity: 1;">
+       <div aria-hidden="true" class="insight_col_item w-dyn-item">
+        <div aria-hidden="true" class="insight_content u-vflex-stretch-bottom">
+         <div aria-hidden="true" class="insight_img_wrap u-cover-absolute u-zindex-0">
+          <div aria-hidden="true" class="insight_img_overlay u-cover-absolute u-zindex-1">
+          </div>
+          <img alt="" aria-hidden="true" class="insight_img u-cover u-zindex-0" loading="lazy" sizes="100vw" src="./assets/68d9d474f902d5546e83bb0e_IMG_5439.jpg"/>
+         </div>
+         <div aria-hidden="true" class="insight_bottom u-vflex-left-top u-gap-6 u-zindex-2">
+          <div aria-hidden="true" class="insight_desc u-vflex-left-top u-gap-4">
+           <div aria-hidden="true" class="insight_date u-text-style-main">
+            October 24, 2025
+           </div>
+           <h3 aria-hidden="true" class="insight_title">
+            Procurement management: how to select the right contractor for complex capital works
+           </h3>
+           <p aria-hidden="true" class="u-line-clamp-2">
+            Effective procurement is the foundation of successful delivery. Here’s how CDI Solutions approaches contractor selection for complex programmes.
+           </p>
+          </div>
+          <a aria-hidden="true" class="btn_main_wrap is-outline-white w-inline-block" href="mailto:adam@cdisolutions.com.au" tabindex="-1">
+           <div aria-hidden="true" class="btn_main_text secondary-5">
+            Read More
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div aria-controls="w-slider-mask-0" aria-label="previous slide" class="insight_arrow is-left w-slider-arrow-left" role="button" tabindex="0">
+      <div class="insight_arrow_icon w-embed">
+       <svg fill="currentColor" height="100%" viewbox="0 0 36 36" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.2959 9.7959L15.0918 18L23.2959 26.2041L21.7041 27.7959L11.9092 18L21.7041 8.2041L23.2959 9.7959Z" fill="currentColor">
+        </path>
+       </svg>
+      </div>
+     </div>
+     <div aria-controls="w-slider-mask-0" aria-label="next slide" class="insight_arrow is-right w-slider-arrow-right" role="button" tabindex="0">
+      <div class="insight_arrow_icon w-embed">
+       <svg fill="currentColor" height="100%" viewbox="0 0 36 36" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.0908 18L14.2959 27.7959L12.7041 26.2041L20.9082 18L12.7041 9.7959L14.2959 8.2041L24.0908 18Z" fill="currentColor">
+        </path>
+       </svg>
+      </div>
+     </div>
+     <div class="u-display-none w-slider-nav w-round w-num">
+      <div aria-label="Show slide 1 of 4" aria-pressed="true" class="w-slider-dot w-active" data-wf-ignore="" role="button" style="margin-left: 3px; margin-right: 3px;" tabindex="0">
+       1
+      </div>
+      <div aria-label="Show slide 2 of 4" aria-pressed="false" class="w-slider-dot" data-wf-ignore="" role="button" style="margin-left: 3px; margin-right: 3px;" tabindex="-1">
+       2
+      </div>
+      <div aria-label="Show slide 3 of 4" aria-pressed="false" class="w-slider-dot" data-wf-ignore="" role="button" style="margin-left: 3px; margin-right: 3px;" tabindex="-1">
+       3
+      </div>
+      <div aria-label="Show slide 4 of 4" aria-pressed="false" class="w-slider-dot" data-wf-ignore="" role="button" style="margin-left: 3px; margin-right: 3px;" tabindex="-1">
+       4
+      </div>
+     </div>
+    </div>
+    <div class="u-display-none">
+     <div class="insight_col_wrap w-dyn-list" style="display: none;">
+      <div class="insight_col_list w-dyn-items" fs-cmsslider-element="list" role="list">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="g_spacer w-variant-d422cbd0-f212-c815-68df-63414354c21d" data-wf--global-spacer--section-space="small">
+   </div>
+  </section>
+  <section class="cta_wrap">
+   <div class="cta_contain u-container-small u-text-align-center u-zindex-1">
+    <div class="cta_layout u-vflex-center-top u-gap-7">
+     <div class="g_paragraph w-richtext u-text-style-h4" data-anim-para="false" data-wf--global-paragraph--settings-font-style="main">
+      <p>
+       Every project is different. Let’s build a strategy that fits yours.
+      </p>
+     </div>
+     <div class="g_paragraph w-richtext" data-anim-para="false" data-wf--global-paragraph--settings-font-style="main">
+      <p>
+       From development feasibility to construction management, we tailor our approach to your specific objectives, constraints and stakeholders.
+      </p>
+     </div>
+     <div class="cta_button_wrap u-hflex-center-center u-gap-5">
+      <div class="cta_button">
+       <div class="btn_main_wrap" data-wf--btn-main--style="primary">
+        <div class="g_clickable_wrap">
+         <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+          <span class="g_clickable_text u-sr-only">
+           Get in Touch
+          </span>
+         </a>
+         <button class="g_clickable_btn" type="button">
+          <span class="g_clickable_text u-sr-only">
+           Get in Touch
+          </span>
+         </button>
+        </div>
+        <div aria-hidden="true" class="btn_main_text">
+         Get in touch
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="cta_bg_wrap u-cover-absolute u-zindex-0">
+    <figure class="g_visual_wrap u-position-relative u-cover">
+     <img alt="" class="g_img" data-anim-parallax="false" loading="lazy" src="./assets/6892fd4e846050fe5b7f2a8e_CTA bg.webp"/>
+    </figure>
+   </div>
+  </section>
+  <footer class="footer u-theme-dark">
+   <div class="g_spacer w-variant-d422cbd0-f212-c815-68df-63414354c21d" data-wf--global-spacer--section-space="small">
+   </div>
+   <div class="footer_contain u-container">
+    <div class="footer_layout u-grid-autofit u-gap-8">
+     <div class="footer_left u-vflex-left-top u-gap-6">
+      <img src="./cdisolutionstransperantwhite.png" alt="CDI Solutions" class="footer_logo" style="height:56px;width:auto;display:block;">
+      <div class="g_paragraph w-richtext" data-anim-para="false" data-wf--global-paragraph--settings-font-style="main">
+       <p>
+        Australia’s Partner for Strategic Project &amp; Construction Management.
+       </p>
+      </div>
+      <div class="footer_social_wrap u-mt-5 u-hflex-left-center">
+       <div class="footer_social_item">
+        <div class="g_clickable_wrap">
+         <a class="g_clickable_link w-inline-block" href="mailto:adam@cdisolutions.com.au" target="">
+          <span class="g_clickable_text u-sr-only">
+          </span>
+         </a>
+         <button class="g_clickable_btn" type="button">
+          <span class="g_clickable_text u-sr-only">
+          </span>
+         </button>
+        </div>
+        <svg fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+         <g clip-path="url(#clip0_2094_3053)">
+          <path d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z" fill="currentColor">
+          </path>
+         </g>
+        </svg>
+       </div>
+      </div>
+     </div>
+     <div class="footer_menu_wrap u-hflex-right-top u-gap-7">
+      <div class="footer_menu_item u-vflex-left-top u-gap-5">
+       <div class="footer_menu_title u-weight-bold">
+        Sectors
+       </div>
+       <div class="footer_menu_wrap w-dyn-list">
+        <div class="footer_menu_list w-dyn-items" role="list">
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Healthcare &amp; Aged Care
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Hotels &amp; Hospitality
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Retail &amp; Mixed-Use
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Commercial &amp; Office
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Industrial &amp; Manufacturing
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Transport &amp; Infrastructure
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Government &amp; Public Sector
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Finance &amp; Insurance
+          </a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+           Education &amp; Research
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="footer_menu_item u-vflex-left-top u-gap-5">
+       <div class="footer_menu_title u-weight-bold">
+        Services
+       </div>
+       <div class="footer_menu_wrap w-dyn-list">
+        <div class="footer_menu_list w-dyn-items" role="list">
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Project Directorship</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Project Strategy</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Development Feasibility</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Programme Strategy</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Project Leadership</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Project Management</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Programme Management</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Construction Management</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Contract Administration</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Superintending</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Building Refurbishment</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Client Representation</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Building Inspections</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Distressed Project Recovery</a>
+         </div>
+         <div class="footer_menu_item w-dyn-item" role="listitem">
+          <a class="footer_link" href="mailto:adam@cdisolutions.com.au">Procurement Management</a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="footer_menu_item u-vflex-left-top u-gap-5">
+       <div class="footer_menu_title u-weight-bold">
+        About
+       </div>
+       <ul class="footer_menu_list" role="list">
+        <li class="footer_menu_link">
+         <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+          Who We Are
+         </a>
+        </li>
+        <li class="footer_menu_link">
+         <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+          Insights
+         </a>
+        </li>
+        <li class="footer_menu_link">
+         <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+          Case studies
+         </a>
+        </li>
+        <li class="footer_menu_link">
+         <a class="footer_link" href="mailto:adam@cdisolutions.com.au">
+          Contact
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="footer_bottom">
+     <div class="footer_line">
+     </div>
+     <div class="footer_copyright_wrap u-hflex-between-center">
+      <div>
+       © 2025 CDI Solutions
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="g_spacer w-variant-d422cbd0-f212-c815-68df-63414354c21d" data-wf--global-spacer--section-space="small">
+   </div>
+  </footer>
+  <script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="./assets/jquery-3.5.1.min.dc5e7f18c8.js.download" type="text/javascript">
+  </script>
+  <script src="./assets/webflow.schunk.36b8fb49256177c8.js.download" type="text/javascript">
+  </script>
+  <script src="./assets/webflow.schunk.fa95583a0a4d14fb.js.download" type="text/javascript">
+  </script>
+  <script src="./assets/webflow.schunk.61b534daaaeddbc7.js.download" type="text/javascript">
+  </script>
+  <script src="./assets/webflow.ae9ec72d.274be6ebb62eba94.js.download" type="text/javascript">
+  </script>
+  <!-- Splide.js JS (latest version) -->
+  <script src="./assets/splide.min.js.download">
+  </script>
+  <!-- Splide.js JS (latest version) -->
+  <script src="./assets/splide.min.js.download">
+  </script>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const splide = new Splide('#my-splide', {
+      type: 'slide',
+      direction: 'ttb', // top to bottom
+      height: '100vh',
+      wheel: true, // enable mouse wheel
+      wheelSleep: 1200, // debounce scroll in ms
+      waitForTransition: true,
+			speed: 1000,
+      arrows: false,
+      pagination: true,
+      perPage: 1,
+    });
+
+    splide.mount();
+  });
+  </script>
+  <script src="./assets/form-124.js.download" type="text/javascript">
+  </script>
+  <script>
+   (function() {
+  var ORANGE = 'rgb(17, 17, 17)';
+  var THRESHOLD = 50;
+  var nav, observer, blocking = false;
+
+  function correctColor() {
+    return window.scrollY > THRESHOLD ? ORANGE : 'transparent';
+  }
+
+  function applyColor() {
+    if (!nav) return;
+    var correct = correctColor();
+    if (nav.style.backgroundColor !== correct) {
+      blocking = true;
+      nav.style.backgroundColor = correct;
+      blocking = false;
+    }
+  }
+
+  function init() {
+    nav = document.querySelector('.nav.w-nav');
+    if (!nav) return;
+    applyColor();
+    window.addEventListener('scroll', applyColor, { passive: true });
+    observer = new MutationObserver(function() {
+      if (!blocking) applyColor();
+    });
+    observer.observe(nav, { attributes: true, attributeFilter: ['style'] });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+  </script>
+  <script>
+  (function() {
+    function initSectorTabs() {
+      var container = document.querySelector('.industries_tab.cdi-tabs');
+      if (!container) return;
+
+      var links = Array.prototype.slice.call(container.querySelectorAll('.w-tab-link'));
+      var panes = Array.prototype.slice.call(container.querySelectorAll('.w-tab-pane'));
+
+      function activateTab(index) {
+        links.forEach(function(l, i) {
+          l.classList.toggle('w--current', i === index);
+          l.setAttribute('aria-selected', i === index ? 'true' : 'false');
+        });
+        panes.forEach(function(p, i) {
+          p.style.display = i === index ? 'block' : 'none';
+        });
+      }
+
+      links.forEach(function(link, index) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          activateTab(index);
+        });
+      });
+
+      activateTab(0);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSectorTabs);
+    } else {
+      initSectorTabs();
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    function updateServiceCards() {
+      var cards = document.querySelectorAll('.services-card');
+      var vh = window.innerHeight;
+      cards.forEach(function(card) {
+        var rect = card.getBoundingClientRect();
+        var scale;
+        if (rect.top >= vh) {
+          scale = 1.08;
+        } else if (rect.bottom <= 0) {
+          scale = 1.0;
+        } else {
+          var entered = (vh - rect.top) / rect.height;
+          scale = 1.08 - (Math.min(1, Math.max(0, entered)) * 0.08);
+        }
+        card.style.transform = 'scale(' + scale.toFixed(3) + ')';
+        card.style.transformOrigin = 'center center';
+      });
+    }
+    window.addEventListener('scroll', updateServiceCards, { passive: true });
+    window.addEventListener('resize', updateServiceCards, { passive: true });
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateServiceCards);
+    } else {
+      updateServiceCards();
+    }
+  })();
+  </script>
+ </body>
+</html>
