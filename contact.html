@@ -157,7 +157,7 @@
       <p class="ct-sub">Tell us a bit about what you're working on and we'll be in touch within one business day.</p>
 
       <!-- Netlify Form -->
-      <form class="ct-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+      <form class="ct-form" name="contact" method="POST" action="/contact.html?success=true" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
         <input type="hidden" name="form-name" value="contact"/>
         <p style="display:none;"><input name="bot-field"/></p>
 
@@ -301,15 +301,31 @@
   </footer>
 
   <script>
-    // Show success state after Netlify redirects back with ?success=true
-    // OR handle via JS submission for a seamless experience
     const form = document.getElementById('contact-form');
     const success = document.getElementById('form-success');
 
+    // Show success state if Netlify redirected back with ?success=true
     if (window.location.search.includes('success=true')) {
       form.style.display = 'none';
       success.style.display = 'block';
     }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = new URLSearchParams(new FormData(form));
+      fetch('/contact.html', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data })
+        .then(function(res) {
+          if (res.ok || res.redirected) {
+            form.style.display = 'none';
+            success.style.display = 'block';
+          } else {
+            form.submit();
+          }
+        })
+        .catch(function() {
+          form.submit();
+        });
+    });
   </script>
   <script>
   /* ── Hamburger toggle ── */
